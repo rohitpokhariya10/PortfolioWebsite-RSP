@@ -1,3 +1,86 @@
+#techstack {
+  margin-bottom: 4rem; /* or use more if you want extra spacing */
+}
+
+.techButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem 0;
+}
+
+.techBtn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px 30px;
+  background-color: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 transparent;
+}
+
+.techBtn:hover {
+  background-color: #FFD700;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.3);
+}
+
+.techBtn.active {
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.4);
+}
+
+.techList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 1rem;
+}
+
+.skillBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1f1f1f;
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: white;
+  border: 1px solid #555;
+  font-size: 1rem;
+  transition: 0.3s;
+  min-width: 160px;
+}
+
+.skillBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+
+.skillLogo {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px;
+}
+.clientDesc {
+  color: #BDBDBD;
+ text-shadow: 0 0 4px rgba(255, 255, 255, 0.05);
+
+}
+
+
+
+
+
 #contactPage {
     min-height: calc(100vh - 4rem);
     width: 100vw;
@@ -84,4 +167,82 @@
     height: 2.5rem;
     width: 2.5rem;
     margin: 0 0.75rem;
+}
+/* ===== RESPONSIVE DESIGN ===== */
+@media screen and (max-width: 768px) {
+  .techButtons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .techBtn {
+    width: 80%;
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .skillBox {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+
+  .contactPageTitle {
+    font-size: 2rem;
+  }
+
+  .clientDesc, .contactDesc {
+    font-size: 0.95rem;
+  }
+
+  .name, .email, .msg {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .submitBtn {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+  }
+
+  .link {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 0.5rem;
+  }
+
+  .techList {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .techBtn {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .skillBox {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .contactPageTitle {
+    font-size: 1.75rem;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+
+  .contactForm {
+    padding: 0 1rem;
+  }
+
+  .link {
+    height: 2rem;
+    width: 2rem;
+  }
 }
