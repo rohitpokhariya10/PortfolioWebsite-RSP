@@ -2,7 +2,7 @@ import React from 'react';
 import './works.css';
 import Portfolio1 from '../../assets/portfolio-1.png';
 import Forcastify from '../../assets/portfolio-2.png';
-import ArtifexAI from '../../assets/portfolio-3.png';
+import ResumeGenerator from '../../assets/portfolio-3.png';
 import Portfolio4 from '../../assets/portfolio-4.png';
 import Portfolio5 from '../../assets/portfolio-5.png';
 import Portfolio6 from '../../assets/portfolio-6.png';
@@ -11,33 +11,19 @@ const projects = [
   {
     title: "Project 1",
     img: Portfolio1,
-    github: "https://github.com/rohitpokhariya10/RohitSP_Portfolio"
+    github: "https://github.com/rohitpokhariya10/PortfolioWebsite-RSP"
   },
   {
     title: "Project 2",
-    img: Forcastify,
-    github: "https://github.com/rohitpokhariya10/Forcastify"
+    img: ResumeGenerator,
+    github: "https://github.com/rohitpokhariya10/resume-generator"
   },
   {
     title: "Project 3",
-    img: ArtifexAI,
-    github: "https://github.com/rohitpokhariya10/project3"
+    img: Forcastify,
+    github: "https://github.com/rohitpokhariya10/Forcastify"
   },
-  {
-    title: "Project 4",
-    img: Portfolio4,
-    github: "https://github.com/rohitpokhariya10/project4"
-  },
-//   {
-//     title: "Project 5",
-//     img: Portfolio5,
-//     github: "https://github.com/rohitpokhariya10/project5"
-//   },
-//   {
-//     title: "Project 6",
-//     img: Portfolio6,
-//     github: "https://github.com/rohitpokhariya10/project6"
-//   },
+ 
 ];
 
 const Works = () => {
@@ -61,7 +47,7 @@ const Works = () => {
         ))}
       </div>
 
-      <button className="workBtn">See More</button>
+      
     </section>
   );
 };
